@@ -1,0 +1,28 @@
+<header class="header">
+  {% comment %} IMG {% endcomment %}
+  <img src="{{ 'https://cdn.shopify.com/s/files/1/0829/1713/0547/files/logo-santorini.png?v=1695034309'}}" class="header__logo"/>
+  {% comment %} NAVIGATION {% endcomment %}
+  {% comment %} ICONS {% endcomment %}
+  <div class="header__group-icons">
+    <div class="header__group-icons__cart">
+      {% render 'cart-icon' %}
+      <span >0</span>
+    </div>
+    <div class="header__group-icons__menu" >
+      {% render 'menu-icon' %}
+    </div>
+  </div>
+</header>
+{% comment %} NAVIGATION MOBILE {% endcomment %}
+<div class="navigation-mobile">
+  <div class="navigation-mobile__sadibar">
+    <div class="navigation-mobile__sadibar__container-input">
+      <div>
+        <input placeholder="Búsqueda de productos"/>
+        {% render 'search-icon' %}
+      </div>
+    </div>
+
+  </div>
+</div>
+
