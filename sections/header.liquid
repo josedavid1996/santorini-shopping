@@ -2,8 +2,29 @@
   {% comment %} IMG {% endcomment %}
   <img src="{{ 'https://cdn.shopify.com/s/files/1/0829/1713/0547/files/logo-santorini.png?v=1695034309'}}" class="header__logo" />
   {% comment %} NAVIGATION {% endcomment %}
+  <nav class="header__navigation">
+    <ul >
+      {% for link in linklists["menu-header"].links %}
+        <li>
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+     <li>
+      <a class="text-secondary" href="#">outlet</a>
+    </li>
+    <li>
+      <a class="text-primary" href="#">tiendas</a>
+    </li>
+    </ul>
+
+  </nav>
   {% comment %} ICONS {% endcomment %}
-    <div class="header__group-icons"> <div class="header__group-icons__cart">
+ 
+    <div class="header__group-icons">
+      <div class="header__group-icons__search">
+      {% render 'search-icon' %}
+    </div>
+       <div class="header__group-icons__cart">
       {% render 'cart-icon' %}
       <span>0</span>
     </div>
@@ -29,8 +50,6 @@
     {% for link in linklists["menu-header"].links %}
       <li>
         <a href="{{ link.url }}">{{ link.title }}</a>
-
-
       </li>
     {% endfor %}
     <li>
@@ -43,9 +62,5 @@
       <a  href="#">inicio de sesión / registrarse</a>
     </li>
   </ul>
-
-
-
-
   </div>
 </div>
