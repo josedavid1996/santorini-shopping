@@ -4,6 +4,7 @@
   --color-primary: #ca9376;
   --bg-black: #0c0c0c;
   --text-black: #4c4c4c;
+  --text-secondary: #ff5e33;
   --black: #000;
   --white: #fff;
 }
@@ -12,11 +13,17 @@ html {
   box-sizing: border-box;
   font-size: 1rem;
   scroll-behavior: smooth;
+  font-family: 'Karla', sans-serif;
 }
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 .header {
@@ -71,32 +78,70 @@ html {
 }
 
 .navigation-mobile__sadibar {
-  width: 320px;
+  width: 253px;
   height: 100vh;
   background-color: var(--bg-black);
+  overflow-y: auto;
 }
-.navigation-mobile__sadibar__container-input {
+.sadibar__container-input {
   padding: 10px;
   border-bottom: 2px solid rgba(92, 92, 92, 0.43);
 }
 
-.navigation-mobile__sadibar__container-input div {
+.sadibar__container-input div {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--white);
   font-family: 'Karla', sans-serif;
-  padding: 14px 14px 18px 14px;
+  padding: 14px 50px 18px 14px;
   font-size: 14px;
+  background-color: #252525;
 }
-.navigation-mobile__sadibar__container-input div input {
+.sadibar__container-input div input {
   background-color: transparent;
   border: 0;
   outline: none;
-  color: var(--text-black);
+  color: var(--white);
+  width: 100%;
 }
-.navigation-mobile__sadibar__container-input div svg {
+
+#input-search::placeholder {
+  color: var(--white);
+}
+.sadibar__container-input div svg {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  position: absolute;
+  top: 9px;
+  right: 10px;
+}
+
+.sadibar__navigation li {
+  list-style: none;
+}
+.sadibar__navigation li a {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 16px;
+  line-height: 26px;
+  overflow-x: hidden;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(92, 92, 92, 0.23);
+  text-decoration: none;
+}
+
+/* UTILS */
+.text-primary {
+  color: var(--color-primary) !important;
+}
+.text-secondary {
+  color: var(--text-secondary) !important;
 }
