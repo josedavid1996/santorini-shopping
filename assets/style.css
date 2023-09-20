@@ -20,6 +20,9 @@ html {
 *::before {
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
 
 ul {
   padding: 0;
@@ -173,6 +176,14 @@ ul {
 }
 .text-secondary {
   color: var(--text-secondary) !important;
+}
+
+.container-image-hero {
+  width: 100%;
+  height: 60vh;
+}
+.container-image-hero__img {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {

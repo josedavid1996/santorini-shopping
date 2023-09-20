@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner-principal.jpg"
+      }
+    }
+  },
+  "order": [
+    "image_banner"
+  ]
+}

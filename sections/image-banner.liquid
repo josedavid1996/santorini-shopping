@@ -1,0 +1,17 @@
+  <img class="container-image-hero__img" src="{{ section.settings.image | img_url: '1650x' }}" alt="">
+
+{% schema %}
+  {
+    "name":"image-hero",
+    "tag":"section",
+    "class":"container-image-hero",
+    "limit":1,
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image hero"
+      }
+    ]
+  }
+{% endschema %}
