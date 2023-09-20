@@ -1,5 +1,10 @@
 {
   "sections": {
+    "more-outstanding": {
+      "type": "more-outstanding",
+      "settings": {
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "settings": {
@@ -8,6 +13,7 @@
     }
   },
   "order": [
-    "image_banner"
+    "image_banner",
+    "more-outstanding"
   ]
 }
