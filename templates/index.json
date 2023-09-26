@@ -1,14 +1,53 @@
 {
   "sections": {
-    "more-outstanding": {
-      "type": "more-outstanding",
-      "settings": {
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/banner-principal.jpg"
+      }
+    },
+    "more-outstanding": {
+      "type": "more-outstanding",
+      "blocks": {
+        "a0fad333-d707-4a37-b534-2ae366bcc17e": {
+          "type": "title_1",
+          "settings": {
+            "text_1": "Lo más"
+          }
+        },
+        "4da892d9-8a73-4fef-9f87-471f01aad638": {
+          "type": "title_2",
+          "settings": {
+            "text_2": "destacado"
+          }
+        },
+        "87260168-3c7e-44a6-adde-78bf80ee9a8e": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "En SANTORINI – Tienda virtual hemos creado una Nueva Colección pensando en ti mujer para que juntos descubramos la manera de dar pasos firmes con estilo, confort y elegancia"
+          }
+        },
+        "2bfad425-2ab9-4389-86b5-f6b38f987ba4": {
+          "type": "image_1",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/ultima-coleccion.png"
+          }
+        },
+        "7e9e8ede-ba0b-4c29-b778-85a55099e40f": {
+          "type": "image_2",
+          "settings": {
+            "image_2": "shopify:\/\/shop_images\/outlet.png"
+          }
+        }
+      },
+      "block_order": [
+        "a0fad333-d707-4a37-b534-2ae366bcc17e",
+        "4da892d9-8a73-4fef-9f87-471f01aad638",
+        "87260168-3c7e-44a6-adde-78bf80ee9a8e",
+        "2bfad425-2ab9-4389-86b5-f6b38f987ba4",
+        "7e9e8ede-ba0b-4c29-b778-85a55099e40f"
+      ],
+      "settings": {
       }
     }
   },
