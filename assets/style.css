@@ -5,6 +5,7 @@
   --color-primary: #ca9376;
   --bg-black: #0c0c0c;
   --text-black: #4c4c4c;
+  --text-black-two: #252222;
   --text-secondary: #ff5e33;
   --black: #000;
   --white: #fff;
@@ -277,6 +278,46 @@ ul {
 .container-image-hero__img {
   width: 100%;
   object-fit: cover;
+}
+
+/* DONT ESCAPE */
+.container__card-product {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto 0;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card-product__title {
+  color: var(--text-black-two);
+  font-family: var(--font-lora);
+  letter-spacing: 0.3px;
+  font-size: 22px;
+  margin-bottom: 8px;
+  margin-top: 10px;
+  line-height: 26.4px;
+  font-weight: 400;
+}
+
+.card-product__group-text {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.card-product__group-text__price {
+  font-size: 16px;
+  color: #949494;
+  font-family: var(--font-karla);
+  line-height: 32px;
+  font-weight: 400;
+}
+.card-product__group-text__iva {
+  font-size: 12.8px;
+  color: #949494;
+  font-family: var(--font-karla);
+  font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {

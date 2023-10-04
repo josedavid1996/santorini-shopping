@@ -49,10 +49,69 @@
       ],
       "settings": {
       }
+    },
+    "dont-escape": {
+      "type": "dont-escape",
+      "blocks": {
+        "756816e1-8bf9-4510-9faf-92e014cb3887": {
+          "type": "title_1",
+          "settings": {
+            "text_1": "No lo dejes"
+          }
+        },
+        "45b6373a-a0cb-4bec-b118-927b148bf5a2": {
+          "type": "title_2",
+          "settings": {
+            "text_2": "escapar"
+          }
+        },
+        "a4dfde94-1e71-4ab6-a59b-5abf64a35f59": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "En SANTORINI – Tienda virtual los zapatos son ese complemento perfecto que define tu estilo, en SANTORINI lo entendimos y por esta razón podrás encontrar toda una colección de tus productos preferidos"
+          }
+        },
+        "c532ffe5-69a8-474e-af49-75351b0671a4": {
+          "type": "product",
+          "settings": {
+            "product": "botas-para-mujer-ferni-cuero-cafe"
+          }
+        },
+        "3f56735c-3dbc-4351-bbc3-8fcc7c81cfe0": {
+          "type": "product",
+          "settings": {
+            "product": "botines-para-mujer-kemi-cuero-negro"
+          }
+        },
+        "915bcff2-0535-4eb0-956c-1ec77fd717d8": {
+          "type": "product",
+          "settings": {
+            "product": "botines-para-mujer-meli-terciopelo-vinotint"
+          }
+        },
+        "d7f5904f-852a-47d3-a738-123921fe6605": {
+          "type": "product",
+          "settings": {
+            "product": "botas-para-mujer-ferni-cuero-cafe"
+          }
+        }
+      },
+      "block_order": [
+        "756816e1-8bf9-4510-9faf-92e014cb3887",
+        "45b6373a-a0cb-4bec-b118-927b148bf5a2",
+        "a4dfde94-1e71-4ab6-a59b-5abf64a35f59",
+        "c532ffe5-69a8-474e-af49-75351b0671a4",
+        "3f56735c-3dbc-4351-bbc3-8fcc7c81cfe0",
+        "915bcff2-0535-4eb0-956c-1ec77fd717d8",
+        "d7f5904f-852a-47d3-a738-123921fe6605"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "image_banner",
-    "more-outstanding"
+    "more-outstanding",
+    "dont-escape"
   ]
 }

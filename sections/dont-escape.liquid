@@ -1,0 +1,75 @@
+<div>
+  
+  {% render 'heading', 
+        first-title: section.blocks[0].settings.text_1,
+        second-title: section.blocks[1].settings.text_2,
+        
+      %}
+      <p class="paragraph-section">{{section.blocks[2].settings.paragraph}}</p>
+
+  <div class="container__card-product">
+    {% for block in section.blocks %}
+      {% if block.type == 'product' %}
+         {% render 'card-product',product:block.settings.product %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "dont-escape",
+    "tag": "section",
+    "class": "container-dont-escape",
+    "limit": 1,
+    "blocks": [
+      {
+        "name": "Title #1",
+        "type": "title_1",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text_1",
+            "label": "Texto numero uno"
+          }
+        ]
+      },
+      {
+        "name": "Title #2",
+        "type": "title_2",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text_2",
+            "label": "Texto numero dos"
+          }
+        ]
+      },
+      {
+        "name": "Paragraph",
+        "type": "paragraph",
+        "settings": [
+          {
+            "type": "text",
+            "id": "paragraph",
+            "label": "Parrafo"
+          }
+        ]
+      },
+        {
+      "type": "product",
+      "name": "Product List",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
+    }
+    ]
+
+  }
+{% endschema %}

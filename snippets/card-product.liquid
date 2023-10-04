@@ -1,0 +1,11 @@
+<a class="card-product">
+  <div class="card-product__container-img">
+      <img  src="{{product | img_url: 'grande'}}" alt="{{product.title}}">
+
+    </div>
+  <h3 class="card-product__title">{{product.title}}</h3>
+  <div class="card-product__group-text">
+    <p class="card-product__group-text__price">{{product.price  | money  }}</p>
+    <p class="card-product__group-text__iva">Valor con IVA</p>
+  </div>
+</a>
