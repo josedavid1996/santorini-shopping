@@ -3,7 +3,7 @@
     "image_banner": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-principal.jpg"
+        "image": "shopify://shop_images/banner-principal.jpg"
       }
     },
     "more-outstanding": {
@@ -30,13 +30,13 @@
         "2bfad425-2ab9-4389-86b5-f6b38f987ba4": {
           "type": "image_1",
           "settings": {
-            "image_1": "shopify:\/\/shop_images\/ultima-coleccion.png"
+            "image_1": "shopify://shop_images/ultima-coleccion.png"
           }
         },
         "7e9e8ede-ba0b-4c29-b778-85a55099e40f": {
           "type": "image_2",
           "settings": {
-            "image_2": "shopify:\/\/shop_images\/outlet.png"
+            "image_2": "shopify://shop_images/outlet.png"
           }
         }
       },
@@ -47,8 +47,7 @@
         "2bfad425-2ab9-4389-86b5-f6b38f987ba4",
         "7e9e8ede-ba0b-4c29-b778-85a55099e40f"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "dont-escape": {
       "type": "dont-escape",
@@ -105,13 +104,16 @@
         "ad82a8c5-1c0b-4322-9498-f1f809f0cff6",
         "d7f5904f-852a-47d3-a738-123921fe6605"
       ],
-      "settings": {
-      }
+      "settings": {}
+    },
+    "your-categories": {
+      "type": "your-categories"
     }
   },
   "order": [
     "image_banner",
     "more-outstanding",
-    "dont-escape"
+    "dont-escape",
+    "your-categories"
   ]
 }

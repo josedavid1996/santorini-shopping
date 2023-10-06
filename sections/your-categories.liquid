@@ -1,0 +1,92 @@
+<div>
+  {% for block in section.blocks %}
+    {% if block.type == 'gruop_text' %}
+      {% render 'heading' 
+        , first-title: block.settings.text_1,
+        second-title: block.settings.text_2 %}
+      <p class="paragraph-section">{{ block.settings.paragraph }}</p>
+    {% endif %}
+  {% endfor %}
+
+  <div class="container__cart-categories">
+    {% for block in section.blocks %}
+      {% if block.type == 'data_categorie' %}
+      {% render 'cart-categorie', 
+          image:block.settings.image_categorie,
+          title:block.settings.title_categorie,
+          paragraph:block.settings.paragraph_categorie,
+          text-button:block.settings.text_button_categorie,
+          url:block.settings.collection.url,
+          orientation:block.settings.orientation,
+          %}
+        
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "your-categories",
+    "tag": "section",
+    "class": "container-your-categories",
+    "limit": 1,
+    "blocks": [
+      {
+        "name": "Gruop Text",
+        "type": "gruop_text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text_1",
+            "label": "Texto numero uno"
+          }, {
+
+            "type": "text",
+            "id": "text_2",
+            "label": "Texto numero dos"
+
+          }, {
+            "type": "text",
+            "id": "paragraph",
+            "label": "Parrafo"
+          }
+        ]
+      },
+      {
+        "name": "Data Categorie",
+        "type": "data_categorie",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_categorie",
+            "label": "Ingresar una imagen"
+          }, {
+
+            "type": "text",
+            "id": "title_categorie",
+            "label": "Ingresa un titulo"
+
+          }, {
+            "type": "text",
+            "id": "paragraph_categorie",
+            "label": "Ingresa un parrafo"
+          }, {
+            "type": "text",
+            "id": "text_button_categorie",
+            "label": "Ingresa un texto para el boton"
+          }, {
+            "type": "collection",
+            "id": "collection",
+            "label": "Ingresa una url para el boton"
+          }, {
+            "type": "text",
+            "id": "orientation",
+            "label": "Elige la orientacion del bloque"
+          }
+        ]
+      }
+    ]
+
+  }
+{% endschema %}
