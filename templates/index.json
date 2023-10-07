@@ -132,11 +132,23 @@
             "collection": "botines",
             "orientation": "right"
           }
+        },
+        "3c8ddfee-63c7-4a9f-bc69-98880c92e7cc": {
+          "type": "data_categorie",
+          "settings": {
+            "image_categorie": "shopify:\/\/shop_images\/Tennis-1200x1200.jpg",
+            "title_categorie": "Tennis",
+            "paragraph_categorie": "Innovación desde su fabricación hasta su estilo, nuestros Tennis siempre a la moda con propuestas diferentes primando el confort y el diseño casual o sport.",
+            "text_button_categorie": "VER NUESTROS TENNIS",
+            "collection": "tenis",
+            "orientation": "left"
+          }
         }
       },
       "block_order": [
         "cda2f9db-bca2-467c-87d4-fa7a4470d3c1",
-        "cfcbf59f-bc33-4585-b5ee-7880b380eeff"
+        "cfcbf59f-bc33-4585-b5ee-7880b380eeff",
+        "3c8ddfee-63c7-4a9f-bc69-98880c92e7cc"
       ],
       "settings": {
       }
