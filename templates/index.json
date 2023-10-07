@@ -143,12 +143,24 @@
             "collection": "tenis",
             "orientation": "left"
           }
+        },
+        "d54bf395-4413-4ba6-870b-f3b5c15ab7ea": {
+          "type": "data_categorie",
+          "settings": {
+            "image_categorie": "shopify:\/\/shop_images\/Zapatos-1200x1200.jpg",
+            "title_categorie": "Zapatos",
+            "paragraph_categorie": "Tacones, sandalias, flats, mocasines y toda la gama de zapatos elegantes, casuales, modernos, vanguardistas y los estilos y diseños en tendencia con las colecciones que siempre están a la moda.",
+            "text_button_categorie": "VER NUESTROS ZAPATOS",
+            "collection": "zapatos",
+            "orientation": "right"
+          }
         }
       },
       "block_order": [
         "cda2f9db-bca2-467c-87d4-fa7a4470d3c1",
         "cfcbf59f-bc33-4585-b5ee-7880b380eeff",
-        "3c8ddfee-63c7-4a9f-bc69-98880c92e7cc"
+        "3c8ddfee-63c7-4a9f-bc69-98880c92e7cc",
+        "d54bf395-4413-4ba6-870b-f3b5c15ab7ea"
       ],
       "settings": {
       }
