@@ -1,13 +1,6 @@
 
 <div>
-  {% for block in section.blocks %}
-    {% if block.type == 'gruop_text' %}
-      {% render 'heading' 
-        , first-title: block.settings.text_1,
-        second-title: block.settings.text_2 %}
-      <p class="paragraph-section">{{ block.settings.paragraph }}</p>
-    {% endif %}
-  {% endfor %}
+
 
   <div class="container__cart-shops">
     {% for block in section.blocks %}
@@ -33,27 +26,6 @@
     "class": "container-our-shops",
     "limit": 1,
     "blocks": [
-      {
-        "name": "Gruop Text",
-        "type": "gruop_text",
-        "settings": [
-          {
-            "type": "text",
-            "id": "text_1",
-            "label": "Texto numero uno"
-          }, {
-
-            "type": "text",
-            "id": "text_2",
-            "label": "Texto numero dos"
-
-          }, {
-            "type": "text",
-            "id": "paragraph",
-            "label": "Parrafo"
-          }
-        ]
-      },
       {
         "name": "Data shops",
         "type": "data-shops",
