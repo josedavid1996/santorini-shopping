@@ -121,10 +121,22 @@
             "collection": "lo-nuevo",
             "orientation": "left"
           }
+        },
+        "cfcbf59f-bc33-4585-b5ee-7880b380eeff": {
+          "type": "data_categorie",
+          "settings": {
+            "image_categorie": "shopify:\/\/shop_images\/Botines-1200x1200.jpg",
+            "title_categorie": "Botines",
+            "paragraph_categorie": "Colecciones sin iguales en Botines que marcan la diferencia en sus acabados y terminaciones perfectas además de su estilo moderno y elegante con una gran variedad de tacones y plataformas ideales para cualquier ocasión.",
+            "text_button_categorie": "VER NUESTROS BOTINES",
+            "collection": "botines",
+            "orientation": "right"
+          }
         }
       },
       "block_order": [
-        "cda2f9db-bca2-467c-87d4-fa7a4470d3c1"
+        "cda2f9db-bca2-467c-87d4-fa7a4470d3c1",
+        "cfcbf59f-bc33-4585-b5ee-7880b380eeff"
       ],
       "settings": {
       }
