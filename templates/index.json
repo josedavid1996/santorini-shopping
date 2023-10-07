@@ -108,12 +108,16 @@
     },
     "your-categories": {
       "type": "your-categories"
+    },
+    "product-star": {
+      "type": "product-star"
     }
   },
   "order": [
     "image_banner",
     "more-outstanding",
     "dont-escape",
-    "your-categories"
+    "your-categories",
+    "product-star"
   ]
 }
