@@ -107,7 +107,60 @@
       "settings": {}
     },
     "your-categories": {
-      "type": "your-categories"
+      "type": "your-categories",
+      "blocks": {
+        "cda2f9db-bca2-467c-87d4-fa7a4470d3c1": {
+          "type": "data_categorie",
+          "settings": {
+            "image_categorie": "shopify://shop_images/Botas-1024x1024.jpg",
+            "title_categorie": "Botas",
+            "paragraph_categorie": "Nuestros Botas son nuestros productos más famosos, fabricados con material seleccionado de la más alta calidad con diseños y detalles diferentes y colores y tonos que se distinguen por su elegancia.",
+            "text_button_categorie": "VER NUESTRAS BOTAS",
+            "collection": "lo-nuevo",
+            "orientation": "left"
+          }
+        },
+        "cfcbf59f-bc33-4585-b5ee-7880b380eeff": {
+          "type": "data_categorie",
+          "settings": {
+            "image_categorie": "shopify://shop_images/Botines-1200x1200.jpg",
+            "title_categorie": "Botines",
+            "paragraph_categorie": "Colecciones sin iguales en Botines que marcan la diferencia en sus acabados y terminaciones perfectas además de su estilo moderno y elegante con una gran variedad de tacones y plataformas ideales para cualquier ocasión.",
+            "text_button_categorie": "VER NUESTROS BOTINES",
+            "collection": "botines",
+            "orientation": "right"
+          }
+        },
+        "3c8ddfee-63c7-4a9f-bc69-98880c92e7cc": {
+          "type": "data_categorie",
+          "settings": {
+            "image_categorie": "shopify://shop_images/Tennis-1200x1200.jpg",
+            "title_categorie": "Tennis",
+            "paragraph_categorie": "Innovación desde su fabricación hasta su estilo, nuestros Tennis siempre a la moda con propuestas diferentes primando el confort y el diseño casual o sport.",
+            "text_button_categorie": "VER NUESTROS TENNIS",
+            "collection": "tenis",
+            "orientation": "left"
+          }
+        },
+        "d54bf395-4413-4ba6-870b-f3b5c15ab7ea": {
+          "type": "data_categorie",
+          "settings": {
+            "image_categorie": "shopify://shop_images/Zapatos-1200x1200.jpg",
+            "title_categorie": "Zapatos",
+            "paragraph_categorie": "Tacones, sandalias, flats, mocasines y toda la gama de zapatos elegantes, casuales, modernos, vanguardistas y los estilos y diseños en tendencia con las colecciones que siempre están a la moda.",
+            "text_button_categorie": "VER NUESTROS ZAPATOS",
+            "collection": "zapatos",
+            "orientation": "right"
+          }
+        }
+      },
+      "block_order": [
+        "cda2f9db-bca2-467c-87d4-fa7a4470d3c1",
+        "cfcbf59f-bc33-4585-b5ee-7880b380eeff",
+        "3c8ddfee-63c7-4a9f-bc69-98880c92e7cc",
+        "d54bf395-4413-4ba6-870b-f3b5c15ab7ea"
+      ],
+      "settings": {}
     },
     "product-star": {
       "type": "product-star"
