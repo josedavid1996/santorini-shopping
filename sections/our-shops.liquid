@@ -1,0 +1,93 @@
+
+<div>
+  {% for block in section.blocks %}
+    {% if block.type == 'gruop_text' %}
+      {% render 'heading' 
+        , first-title: block.settings.text_1,
+        second-title: block.settings.text_2 %}
+      <p class="paragraph-section">{{ block.settings.paragraph }}</p>
+    {% endif %}
+  {% endfor %}
+
+  <div class="container__cart-shops">
+    {% for block in section.blocks %}
+      {% if block.type == 'data-shops' %}
+      {% render 'cart-shops', 
+          image:block.settings.image_shops,
+          title:block.settings.title_shops,
+          paragraph:block.settings.paragraph_shops,
+          text-button:block.settings.text_button_shops,
+          url:block.settings.collection.url,
+          orientation:block.settings.orientation,
+          %}
+        
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "your-shopss",
+    "tag": "section",
+    "class": "container-your-shopss",
+    "limit": 1,
+    "blocks": [
+      {
+        "name": "Gruop Text",
+        "type": "gruop_text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text_1",
+            "label": "Texto numero uno"
+          }, {
+
+            "type": "text",
+            "id": "text_2",
+            "label": "Texto numero dos"
+
+          }, {
+            "type": "text",
+            "id": "paragraph",
+            "label": "Parrafo"
+          }
+        ]
+      },
+      {
+        "name": "Data shops",
+        "type": "data-shops",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_shops",
+            "label": "Ingresar una imagen"
+          }, {
+
+            "type": "text",
+            "id": "title_shops",
+            "label": "Ingresa un titulo"
+
+          }, {
+            "type": "text",
+            "id": "paragraph_shops",
+            "label": "Ingresa un parrafo"
+          }, {
+            "type": "text",
+            "id": "text_button_shops",
+            "label": "Ingresa un texto para el boton"
+          }, {
+            "type": "collection",
+            "id": "collection",
+            "label": "Ingresa una url para el boton"
+          }, {
+            "type": "text",
+            "id": "orientation",
+            "label": "Elige la orientacion del bloque"
+          }
+        ]
+      }
+    ]
+
+  }
+{% endschema %}
