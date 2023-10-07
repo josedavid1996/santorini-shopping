@@ -198,11 +198,12 @@ ul {
 .text-secondary {
   color: var(--text-secondary) !important;
 }
-.orientation-right {
-  flex-direction: row-reverse !important;
-}
+
 .align-start {
   align-items: flex-start !important;
+}
+.justify-content {
+  justify-content: flex-start !important;
 }
 .left {
   text-align: left !important;
@@ -375,9 +376,14 @@ ul {
   flex-direction: column-reverse;
   justify-content: center;
   width: 95%;
-  max-width: 1600px;
+  max-width: 1040px;
   margin: 0 auto;
   margin-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.cart-categories__image {
+  width: 100%;
 }
 .cart-categories__image img {
   width: 100%;
@@ -386,13 +392,18 @@ ul {
 
 .cart-categories__group-info {
   display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 4vh !important;
+}
+.cart-categories__group-info div {
+  width: 100%;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: end;
-  margin-bottom: 4vh !important;
 }
-
-.cart-categories__group-info p:nth-child(1) {
+.cart-categories__group-info div p:nth-child(1) {
   color: var(--color-primary);
   font-size: 75px;
   font-family: serif;
@@ -400,7 +411,7 @@ ul {
   font-weight: 400;
   margin-bottom: 35px;
 }
-.cart-categories__group-info p:nth-child(2) {
+.cart-categories__group-info div p:nth-child(2) {
   text-align: right;
   margin-bottom: 25px;
   font-size: 14px;
@@ -408,9 +419,9 @@ ul {
   color: var(--text-black);
 }
 
-.cart-categories__group-info a {
+.cart-categories__group-info div a {
   padding: 10px 20px;
-  margin-left: 10px;
+
   margin-bottom: 10px;
   background-color: var(--black);
   color: var(--white);
@@ -432,6 +443,11 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
+  /* utilist */
+  .orientation-right {
+    flex-direction: row-reverse !important;
+  }
+
   .header__group-icons__search {
     display: block;
   }
@@ -455,6 +471,10 @@ ul {
   .cart-categories {
     flex-direction: row;
     margin-top: 60px;
+  }
+
+  .cart-categories__group-info div {
+    width: 58.33333333%;
   }
 }
 
