@@ -1,5 +1,5 @@
 
-<div>
+{% comment %} <div>
 
 
   <div class="container__cart-shops">
@@ -15,7 +15,7 @@
       {% endif %}
     {% endfor %}
   </div>
-</div>
+</div> {% endcomment %}
 
 {% schema %}
   {
@@ -40,12 +40,83 @@
 
           }, {
             "type": "text",
-            "id": "paragraph_shops",
-            "label": "Ingresa un parrafo"
+            "id": "text_1",
+            "label": "Texto numero uno"
+          },{
+            "type": "text",
+            "id": "text_2",
+            "label": "Texto numero dos"
           }, {
             "type": "text",
             "id": "text_button_shops",
             "label": "Ingresa un texto para el boton"
+          }
+        ]
+      }
+    ]
+
+  }
+{% endschema %}
+
+{% schema %}
+  {
+    "name": "our-shops",
+    "tag": "section",
+    "class": "container-our-shops",
+    "limit": 1,
+    "blocks": [
+      {
+        "name": "Title #1",
+        "type": "title_1",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text_1",
+            "label": "Texto numero uno"
+          }
+        ]
+      },
+      {
+        "name": "Title #2",
+        "type": "title_2",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text_2",
+            "label": "Texto numero dos"
+          }
+        ]
+      },
+      {
+        "name": "Paragraph",
+        "type": "paragraph",
+        "settings": [
+          {
+            "type": "text",
+            "id": "paragraph",
+            "label": "Parrafo"
+          }
+        ]
+      },
+      {
+        "name": "Image #1",
+        "type": "image_1",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "Imagen uno"
+          }
+        ]
+      },
+      {
+        "name": "Image #2",
+        "type": "image_2",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_2",
+            "label": "Imagen dos"
           }
         ]
       }
