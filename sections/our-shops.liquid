@@ -1,5 +1,5 @@
 
-{% comment %} <div>
+ <div>
 
 
   <div class="container__cart-shops">
@@ -7,15 +7,17 @@
       {% if block.type == 'data-shops' %}
       {% render 'cart-shops', 
           image:block.settings.image_shops,
-          title:block.settings.title_shops,
+          first-title:block.settings.text_1,
+          second-title:block.settings.text_2,
           paragraph:block.settings.paragraph_shops,
           text-button:block.settings.text_button_shops,
           %}
         
+          
       {% endif %}
     {% endfor %}
   </div>
-</div> {% endcomment %}
+</div> 
 
 {% schema %}
   {
@@ -32,13 +34,8 @@
             "type": "image_picker",
             "id": "image_shops",
             "label": "Ingresar una imagen"
-          }, {
-
-            "type": "text",
-            "id": "title_shops",
-            "label": "Ingresa un titulo"
-
-          }, {
+          },
+           {
             "type": "text",
             "id": "text_1",
             "label": "Texto numero uno"
@@ -46,6 +43,10 @@
             "type": "text",
             "id": "text_2",
             "label": "Texto numero dos"
+          }, {
+            "type": "text",
+            "id": "paragraph_shops",
+            "label": "Parrafo"
           }, {
             "type": "text",
             "id": "text_button_shops",
@@ -58,69 +59,3 @@
   }
 {% endschema %}
 
-{% schema %}
-  {
-    "name": "our-shops",
-    "tag": "section",
-    "class": "container-our-shops",
-    "limit": 1,
-    "blocks": [
-      {
-        "name": "Title #1",
-        "type": "title_1",
-        "settings": [
-          {
-            "type": "text",
-            "id": "text_1",
-            "label": "Texto numero uno"
-          }
-        ]
-      },
-      {
-        "name": "Title #2",
-        "type": "title_2",
-        "settings": [
-          {
-            "type": "text",
-            "id": "text_2",
-            "label": "Texto numero dos"
-          }
-        ]
-      },
-      {
-        "name": "Paragraph",
-        "type": "paragraph",
-        "settings": [
-          {
-            "type": "text",
-            "id": "paragraph",
-            "label": "Parrafo"
-          }
-        ]
-      },
-      {
-        "name": "Image #1",
-        "type": "image_1",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "image_1",
-            "label": "Imagen uno"
-          }
-        ]
-      },
-      {
-        "name": "Image #2",
-        "type": "image_2",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "image_2",
-            "label": "Imagen dos"
-          }
-        ]
-      }
-    ]
-
-  }
-{% endschema %}
