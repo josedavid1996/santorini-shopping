@@ -211,8 +211,25 @@
       "settings": {
       }
     },
-    "our-shops":{
-      "type": "our-shops"
+    "our-shops": {
+      "type": "our-shops",
+      "blocks": {
+        "2962ce2a-53a1-496f-b5cd-27f8b18b2302": {
+          "type": "data-shops",
+          "settings": {
+            "image_shops": "shopify:\/\/shop_images\/Banner-550x550.png",
+            "text_1": "Nuestras",
+            "text_2": "tiendas",
+            "paragraph_shops": "Visítanos y vive la experiencia SANTORINI brindándote la mejor asesoría y atención con el mejor calzado femenino fabricado en el país en los mejores centros comerciales de la ciudad de Bogotá.",
+            "text_button_shops": "IR A NUESTRAS TIENDAS"
+          }
+        }
+      },
+      "block_order": [
+        "2962ce2a-53a1-496f-b5cd-27f8b18b2302"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
