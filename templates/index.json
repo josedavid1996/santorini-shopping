@@ -211,8 +211,63 @@
       "settings": {
       }
     },
-    "our-shops":{
-      "type": "our-shops"
+    "our-shops": {
+      "type": "our-shops",
+      "blocks": {
+        "dbf5518d-76ef-4e37-9c4e-19712eb3f6b9": {
+          "type": "data-shops",
+          "settings": {
+            "image_shops": "shopify:\/\/shop_images\/Banner-550x550.png",
+            "text_1": "Nuestras",
+            "text_2": "tiendas",
+            "paragraph_shops": "Visítanos y vive la experiencia SANTORINI brindándote la mejor asesoría y atención con el mejor calzado femenino fabricado en el país en los mejores centros comerciales de la ciudad de Bogotá.",
+            "text_button_shops": "IR A NUESTRAS TIENDAS"
+          }
+        }
+      },
+      "block_order": [
+        "dbf5518d-76ef-4e37-9c4e-19712eb3f6b9"
+      ],
+      "settings": {
+      }
+    },
+    "for-you": {
+      "type": "for-you",
+      "blocks": {
+        "75fec11f-05be-48d2-b5e0-c750cdc71169": {
+          "type": "gruop_text",
+          "settings": {
+            "text_1": "Lo que tenemos",
+            "text_2": "para tí",
+            "paragraph": "En SANTORINI – Tienda virtual siempre marcamos la diferencia, vive y regala la experiencia SANTORINI."
+          }
+        },
+        "cb0b369e-fdd9-4879-a583-c03370f27477": {
+          "type": "cards_for_you",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Santorni_bonos.png",
+            "title": "BONOS REGALO PARA SORPRENDER",
+            "description": "De tu interés",
+            "url": "esto va hacer una url"
+          }
+        },
+        "38e59208-4980-4a91-b591-36a855641cd4": {
+          "type": "cards_for_you",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Santorini_zapatos.png",
+            "title": "PARA EL CUIDADO DE TUS ZAPATOS",
+            "description": "De tu interés",
+            "url": "Esto va hacer un enlace"
+          }
+        }
+      },
+      "block_order": [
+        "75fec11f-05be-48d2-b5e0-c750cdc71169",
+        "cb0b369e-fdd9-4879-a583-c03370f27477",
+        "38e59208-4980-4a91-b591-36a855641cd4"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -221,6 +276,7 @@
     "dont-escape",
     "your-categories",
     "product-star",
-    "our-shops"
+    "our-shops",
+    "for-you"
   ]
 }

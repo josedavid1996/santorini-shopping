@@ -1,0 +1,89 @@
+
+{{ 'css--cards--for--you.css' | asset_url | stylesheet_tag }}
+
+<div>
+  {% for block in section.blocks %}
+    {% if block.type == 'gruop_text' %}
+      {% render 'heading' 
+        , first-title: block.settings.text_1
+        ,second-title: block.settings.text_2 %}
+      <p class="paragraph-section">{{ block.settings.paragraph }}</p>
+    {% endif %}
+  {% endfor %}
+  <div class="cards-for-you">
+    {% for block in section.blocks %}
+      {% if block.type == 'cards_for_you' %}
+        {% render 'card-for-you' 
+          , image: block.settings.image
+          , title: block.settings.title
+          , description: block.settings.description
+          , url: block.settings.url
+         %}
+  
+        
+      {% endif %}
+    {% endfor %}
+
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "for-you",
+    "tag": "section",
+    "class": "container-for-you",
+    "limit": 1,
+    "blocks": [
+      {
+        "name": "Gruop Text",
+        "type": "gruop_text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text_1",
+            "label": "Texto numero uno"
+          }, {
+
+            "type": "text",
+            "id": "text_2",
+            "label": "Texto numero dos"
+
+          }, {
+            "type": "text",
+            "id": "paragraph",
+            "label": "Parrafo"
+          }
+        ]
+      }, {
+        "name": "cards-for-you",
+        "type": "cards_for_you",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image hero"
+          }, {
+
+            "type": "text",
+            "id": "title",
+            "label": "Titulo de la card"
+          },  {
+
+            "type": "text",
+            "id": "description",
+            "label": "Descripcion de la card"
+
+          },
+          {
+            "type": "text",
+            "id": "url",
+            "label": "Url de la card"
+          }
+
+        ]
+      }
+
+    ]
+
+  }
+{% endschema %}
