@@ -214,7 +214,11 @@
     "our-shops": {
       "type": "our-shops",
       "blocks": {
+<<<<<<< HEAD
         "dbf5518d-76ef-4e37-9c4e-19712eb3f6b9": {
+=======
+        "2962ce2a-53a1-496f-b5cd-27f8b18b2302": {
+>>>>>>> 95a4a2680dc21638483041784581637f816f3c34
           "type": "data-shops",
           "settings": {
             "image_shops": "shopify:\/\/shop_images\/Banner-550x550.png",
