@@ -3,7 +3,7 @@
     "image_banner": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/banner-principal.jpg"
+        "image": "shopify://shop_images/banner-principal.jpg"
       }
     },
     "more-outstanding": {
@@ -30,13 +30,13 @@
         "2bfad425-2ab9-4389-86b5-f6b38f987ba4": {
           "type": "image_1",
           "settings": {
-            "image_1": "shopify:\/\/shop_images\/ultima-coleccion.png"
+            "image_1": "shopify://shop_images/ultima-coleccion.png"
           }
         },
         "7e9e8ede-ba0b-4c29-b778-85a55099e40f": {
           "type": "image_2",
           "settings": {
-            "image_2": "shopify:\/\/shop_images\/outlet.png"
+            "image_2": "shopify://shop_images/outlet.png"
           }
         }
       },
@@ -47,8 +47,7 @@
         "2bfad425-2ab9-4389-86b5-f6b38f987ba4",
         "7e9e8ede-ba0b-4c29-b778-85a55099e40f"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "dont-escape": {
       "type": "dont-escape",
@@ -105,8 +104,7 @@
         "ad82a8c5-1c0b-4322-9498-f1f809f0cff6",
         "d7f5904f-852a-47d3-a738-123921fe6605"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "your-categories": {
       "type": "your-categories",
@@ -114,7 +112,7 @@
         "cda2f9db-bca2-467c-87d4-fa7a4470d3c1": {
           "type": "data_categorie",
           "settings": {
-            "image_categorie": "shopify:\/\/shop_images\/Botas-1024x1024.jpg",
+            "image_categorie": "shopify://shop_images/Botas-1024x1024.jpg",
             "title_categorie": "Botas",
             "paragraph_categorie": "Nuestros Botas son nuestros productos más famosos, fabricados con material seleccionado de la más alta calidad con diseños y detalles diferentes y colores y tonos que se distinguen por su elegancia.",
             "text_button_categorie": "VER NUESTRAS BOTAS",
@@ -125,7 +123,7 @@
         "cfcbf59f-bc33-4585-b5ee-7880b380eeff": {
           "type": "data_categorie",
           "settings": {
-            "image_categorie": "shopify:\/\/shop_images\/Botines-1200x1200.jpg",
+            "image_categorie": "shopify://shop_images/Botines-1200x1200.jpg",
             "title_categorie": "Botines",
             "paragraph_categorie": "Colecciones sin iguales en Botines que marcan la diferencia en sus acabados y terminaciones perfectas además de su estilo moderno y elegante con una gran variedad de tacones y plataformas ideales para cualquier ocasión.",
             "text_button_categorie": "VER NUESTROS BOTINES",
@@ -136,7 +134,7 @@
         "3c8ddfee-63c7-4a9f-bc69-98880c92e7cc": {
           "type": "data_categorie",
           "settings": {
-            "image_categorie": "shopify:\/\/shop_images\/Tennis-1200x1200.jpg",
+            "image_categorie": "shopify://shop_images/Tennis-1200x1200.jpg",
             "title_categorie": "Tennis",
             "paragraph_categorie": "Innovación desde su fabricación hasta su estilo, nuestros Tennis siempre a la moda con propuestas diferentes primando el confort y el diseño casual o sport.",
             "text_button_categorie": "VER NUESTROS TENNIS",
@@ -147,7 +145,7 @@
         "d54bf395-4413-4ba6-870b-f3b5c15ab7ea": {
           "type": "data_categorie",
           "settings": {
-            "image_categorie": "shopify:\/\/shop_images\/Zapatos-1200x1200.jpg",
+            "image_categorie": "shopify://shop_images/Zapatos-1200x1200.jpg",
             "title_categorie": "Zapatos",
             "paragraph_categorie": "Tacones, sandalias, flats, mocasines y toda la gama de zapatos elegantes, casuales, modernos, vanguardistas y los estilos y diseños en tendencia con las colecciones que siempre están a la moda.",
             "text_button_categorie": "VER NUESTROS ZAPATOS",
@@ -162,8 +160,7 @@
         "3c8ddfee-63c7-4a9f-bc69-98880c92e7cc",
         "d54bf395-4413-4ba6-870b-f3b5c15ab7ea"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "product-star": {
       "type": "product-star",
@@ -208,20 +205,15 @@
         "29a99e91-0352-4653-8a38-1dec1bb53c0d",
         "d67c4762-01af-4036-bd6b-97b844589868"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "our-shops": {
       "type": "our-shops",
       "blocks": {
-<<<<<<< HEAD
         "dbf5518d-76ef-4e37-9c4e-19712eb3f6b9": {
-=======
-        "2962ce2a-53a1-496f-b5cd-27f8b18b2302": {
->>>>>>> 95a4a2680dc21638483041784581637f816f3c34
           "type": "data-shops",
           "settings": {
-            "image_shops": "shopify:\/\/shop_images\/Banner-550x550.png",
+            "image_shops": "shopify://shop_images/Banner-550x550.png",
             "text_1": "Nuestras",
             "text_2": "tiendas",
             "paragraph_shops": "Visítanos y vive la experiencia SANTORINI brindándote la mejor asesoría y atención con el mejor calzado femenino fabricado en el país en los mejores centros comerciales de la ciudad de Bogotá.",
@@ -229,11 +221,8 @@
           }
         }
       },
-      "block_order": [
-        "dbf5518d-76ef-4e37-9c4e-19712eb3f6b9"
-      ],
-      "settings": {
-      }
+      "block_order": ["dbf5518d-76ef-4e37-9c4e-19712eb3f6b9"],
+      "settings": {}
     },
     "for-you": {
       "type": "for-you",
@@ -249,7 +238,7 @@
         "cb0b369e-fdd9-4879-a583-c03370f27477": {
           "type": "cards_for_you",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Santorni_bonos.png",
+            "image": "shopify://shop_images/Santorni_bonos.png",
             "title": "BONOS REGALO PARA SORPRENDER",
             "description": "De tu interés",
             "url": "esto va hacer una url"
@@ -258,7 +247,7 @@
         "38e59208-4980-4a91-b591-36a855641cd4": {
           "type": "cards_for_you",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Santorini_zapatos.png",
+            "image": "shopify://shop_images/Santorini_zapatos.png",
             "title": "PARA EL CUIDADO DE TUS ZAPATOS",
             "description": "De tu interés",
             "url": "Esto va hacer un enlace"
@@ -270,8 +259,7 @@
         "cb0b369e-fdd9-4879-a583-c03370f27477",
         "38e59208-4980-4a91-b591-36a855641cd4"
       ],
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
