@@ -1,0 +1,73 @@
+{{ 'footer.css' | asset_url | stylesheet_tag }}
+
+<footer>
+  <div class="container-footer">
+  {% comment %} LOGO {% endcomment %}
+  <div class="group-img">
+    <img src="{{ 'https://cdn.shopify.com/s/files/1/0829/1713/0547/files/logo-santorini-blanco.png?v=1698969299'}}" class="footer__logo" />
+      <div class="group-img__icons">
+        {% render 'facebook-icon' %}
+        {% render 'instagram-icon' %}
+      </div>
+  </div>
+  {% comment %} LINKS MARCA {% endcomment %}
+  <nav class="footer__link">
+    <h3>la marca</h3>
+    <ul >
+      {% for link in linklists["footer"].links %}
+        <li>
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    
+    </ul>
+
+  </nav>
+  {% comment %} AYUDA {% endcomment %}
+  <nav class="footer__link">
+    <h3>ayuda</h3>
+    <ul >
+      {% for link in linklists["Ayuda"].links %}
+        <li>
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    
+    </ul>
+
+  </nav>
+  {% comment %} CONTACTOS {% endcomment %}
+  <div class="footer__link">
+     <h3>contactanos</h3>
+    {% for block in section.blocks %}
+      {% if block.type == 'texts_footer' %}
+          <p>{{block.settings.text}}</p>
+      {% endif %}
+    {% endfor %}
+
+  </div>
+
+  </div>
+</footer>
+
+
+{% schema %}
+  {
+    "name": "Footer contact",
+    "blocks": [
+      {
+        "name": "Texts footer",
+        "type": "texts_footer",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Texto contacto"
+          }
+        ]
+      }
+      
+    ]
+
+  }
+{% endschema %}

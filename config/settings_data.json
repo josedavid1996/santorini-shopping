@@ -1,5 +1,101 @@
 {
   "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "3f3b5a13-f516-4ace-ab5b-50ddbfd754f1": {
+            "type": "texts_footer",
+            "settings": {
+              "text": "Razón Social"
+            }
+          },
+          "c225b23f-c935-4679-809e-c995bdf22363": {
+            "type": "texts_footer",
+            "settings": {
+              "text": "Fenise SAS"
+            }
+          },
+          "6537f67c-3fda-44ee-b5ec-67a56746c27c": {
+            "type": "texts_footer",
+            "settings": {
+              "text": "NIT 901169825-4"
+            }
+          },
+          "6dcc3777-28d6-4872-8bd4-af4829178a93": {
+            "type": "texts_footer",
+            "settings": {
+              "text": "Dirección de notificación"
+            }
+          },
+          "09ae3164-9171-4475-8688-51c33c386ba7": {
+            "type": "texts_footer",
+            "settings": {
+              "text": "Carrera 70 C # 79 - 51"
+            }
+          },
+          "3406d244-ef74-4c33-9e75-a1ddce424108": {
+            "type": "texts_footer",
+            "settings": {
+              "text": "Servicio al Cliente"
+            }
+          },
+          "4d223b6c-4ad6-47f8-b075-57cf33ed315d": {
+            "type": "texts_footer",
+            "settings": {
+              "text": "Bogotá: (601) 616 7347 Ext:125"
+            }
+          },
+          "e9045ad1-473c-4f73-9aca-a84a1e6b5e7a": {
+            "type": "texts_footer",
+            "settings": {
+              "text": "Mail: servicioalcliente@santorini.com.c"
+            }
+          },
+          "03285221-289f-4804-8440-26dcfe5c3e06": {
+            "type": "texts_footer",
+            "settings": {
+              "text": "Tienda en Línea"
+            }
+          },
+          "f5f126c6-c3bc-429a-911a-1b18aea64a55": {
+            "type": "texts_footer",
+            "settings": {
+              "text": "Bogotá: (601) 616 7347 Ext: 106 o 108"
+            }
+          },
+          "57ab19a4-27e8-45c6-bfeb-69d29007995f": {
+            "type": "texts_footer",
+            "settings": {
+              "text": "Mail: eshop@santorini.com.co"
+            }
+          }
+        },
+        "block_order": [
+          "3f3b5a13-f516-4ace-ab5b-50ddbfd754f1",
+          "c225b23f-c935-4679-809e-c995bdf22363",
+          "6537f67c-3fda-44ee-b5ec-67a56746c27c",
+          "6dcc3777-28d6-4872-8bd4-af4829178a93",
+          "09ae3164-9171-4475-8688-51c33c386ba7",
+          "3406d244-ef74-4c33-9e75-a1ddce424108",
+          "4d223b6c-4ad6-47f8-b075-57cf33ed315d",
+          "e9045ad1-473c-4f73-9aca-a84a1e6b5e7a",
+          "03285221-289f-4804-8440-26dcfe5c3e06",
+          "f5f126c6-c3bc-429a-911a-1b18aea64a55",
+          "57ab19a4-27e8-45c6-bfeb-69d29007995f"
+        ],
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
