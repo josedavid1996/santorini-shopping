@@ -144,10 +144,6 @@ ul {
   aspect-ratio: 16 / 9;
   overflow: hidden;
 }
-.container-image-hero__img {
-  width: 100%;
-  object-fit: cover;
-}
 
 /* DONT ESCAPE */
 .container__card-product {
