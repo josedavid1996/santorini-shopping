@@ -144,40 +144,6 @@ ul {
   font-weight: 400;
 }
 
-.container-outstanding {
-  width: 95%;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-.container-outstanding div {
-  width: 100%;
-}
-.container-image-outstanding {
-  width: 100%;
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
-}
-.container-image-outstanding div {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  overflow: hidden;
-}
-.container-image-outstanding div img {
-  width: 100%;
-  height: auto;
-
-  transition: all 0.5s ease-in-out;
-}
-.container-image-outstanding div img:hover {
-  transform: scale(1.1);
-}
-
 /* CARD CATEGORIES */
 .container__cart-categories {
   margin-top: 40px;
