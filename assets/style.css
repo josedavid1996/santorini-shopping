@@ -75,49 +75,6 @@ ul {
 }
 /* ****** Components ******* */
 
-/* HEADING */
-.heading-container {
-  display: flex;
-  justify-content: center;
-  font-style: italic;
-  line-height: 77px;
-  font-size: 55px;
-  color: var(--black);
-  font-family: 'serif';
-  position: relative;
-  padding: 35px 0;
-  margin: 35px;
-  text-align: center;
-}
-.heading-container h2 {
-  font-weight: 400;
-}
-.heading-container h2 span {
-  font-weight: 400;
-  color: var(--color-primary);
-}
-.heading-container::after {
-  content: '';
-  width: 100px;
-  height: 2px;
-  background-color: var(--black);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
-.paragraph-section {
-  max-width: 584px;
-  margin: 0 auto;
-  font-size: 14px;
-  color: var(--text-black);
-  font-family: 'Karla', sans-serif;
-  text-align: center;
-  line-height: 22px;
-}
-
 /* ****** Utilities ******* */
 .text-primary {
   color: var(--color-primary) !important;
