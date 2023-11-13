@@ -1,14 +1,17 @@
+{{ 'css--cart-shops.css' | asset_url | stylesheet_tag }}
+
+
 <div class="cart-shops">
   <div class="cart-shops__image">
     <img src="{{image | img_url: 'grande'}}" alt="{{title}}">
   </div>
   <div class="cart-shops__group-info">
-    <div >
-        <h3>
-    {{first-title}}
-    <span>{{second-title}}</span>
-    </h3>
-      <p >{{ paragraph }}</p>
+    <div>
+      <h3>
+        {{first-title}}
+        <span>{{second-title}}</span>
+      </h3>
+      <p>{{ paragraph }}</p>
       <a href="{{url}}">{{ text-button }}</a>
 
     </div>
