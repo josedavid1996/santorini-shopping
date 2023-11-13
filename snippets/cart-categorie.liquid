@@ -1,25 +1,16 @@
-<div
-  class="cart-categories
-  {% if orientation == "right" %}
-    orientation-right
-  {% endif %}">
+{{ 'css--cart--categories.css' | asset_url | stylesheet_tag }}
+
+<div class="cart-categories
+  {% if orientation == 'right' %} orientation-right {% endif %}" {{orientation}}>
   <div class="cart-categories__image">
     <img src="{{image | img_url: 'grande'}}" alt="{{title}}">
   </div>
-  <div
-    class="cart-categories__group-info
-    {% if orientation == "right" %}
-      justify-content
-    {% endif %}">
-    <div class="{% if orientation == "right" %}
-      align-start
-    {% endif %}">
+  <div class="cart-categories__group-info
+    {% if orientation == 'right' %} justify-content {% endif %}">
+    <div class="{% if orientation == 'right' %} align-start {% endif %}">
       <p>{{ title }}</p>
-      <p
-        class="
-        {% if orientation == "right" %}
-          left
-        {% endif %}">
+      <p class="
+        {% if orientation == 'right' %} left {% endif %}">
         {{ paragraph }}</p>
       <a href="{{url}}">{{ text-button }}</a>
 
