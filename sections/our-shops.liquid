@@ -1,61 +1,57 @@
-
- <div>
-
-
+<div>
   <div class="container__cart-shops">
     {% for block in section.blocks %}
-      {% if block.type == 'data-shops' %}
-      {% render 'cart-shops', 
-          image:block.settings.image_shops,
-          first-title:block.settings.text_1,
-          second-title:block.settings.text_2,
-          paragraph:block.settings.paragraph_shops,
-          text-button:block.settings.text_button_shops,
-          %}
-        
-          
-      {% endif %}
+    {% if block.type == 'data-shops' %}
+    {% render 'cart-shops',
+    image:block.settings.image_shops,
+    first-title:block.settings.text_1,
+    second-title:block.settings.text_2,
+    paragraph:block.settings.paragraph_shops,
+    text-button:block.settings.text_button_shops,
+    %}
+
+
+    {% endif %}
     {% endfor %}
   </div>
-</div> 
+</div>
 
 {% schema %}
-  {
-    "name": "our-shops",
-    "tag": "section",
-    "class": "container-our-shops",
-    "limit": 1,
-    "blocks": [
-      {
-        "name": "Data shops",
-        "type": "data-shops",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "image_shops",
-            "label": "Ingresar una imagen"
-          },
-           {
-            "type": "text",
-            "id": "text_1",
-            "label": "Texto numero uno"
-          },{
-            "type": "text",
-            "id": "text_2",
-            "label": "Texto numero dos"
-          }, {
-            "type": "text",
-            "id": "paragraph_shops",
-            "label": "Parrafo"
-          }, {
-            "type": "text",
-            "id": "text_button_shops",
-            "label": "Ingresa un texto para el boton"
-          }
-        ]
-      }
-    ]
+{
+"name": "our-shops",
+"tag": "section",
+"class": "container-our-shops",
+"limit": 1,
+"blocks": [
+{
+"name": "Data shops",
+"type": "data-shops",
+"settings": [
+{
+"type": "image_picker",
+"id": "image_shops",
+"label": "Ingresar una imagen"
+},
+{
+"type": "text",
+"id": "text_1",
+"label": "Texto numero uno"
+},{
+"type": "text",
+"id": "text_2",
+"label": "Texto numero dos"
+}, {
+"type": "text",
+"id": "paragraph_shops",
+"label": "Parrafo"
+}, {
+"type": "text",
+"id": "text_button_shops",
+"label": "Ingresa un texto para el boton"
+}
+]
+}
+]
 
-  }
+}
 {% endschema %}
-
