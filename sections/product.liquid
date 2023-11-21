@@ -10,7 +10,7 @@
       <img src="{{ featured_image | img_url: 'large' }}" alt="{{ featured_image.alt | escape }}">
     </div>
     <div class="gallery-product__images">
-      <div class="swiper mySwiper">
+      <div class="swiper carousel-PDP">
         <div class="swiper-wrapper">
           {% for image in product.images %}
           <a href="{{ image.src | img_url: 'large' }}" class="swiper-slide">
@@ -32,6 +32,37 @@
       {{product.price | money_without_trailing_zeros}}
       <span>Valor con IVA</span>
     </h5>
+
+    <p class="info-product__description">
+      {{product.description}}
+    </p>
+
+    {% comment %} SIZE {% endcomment %}
+    <div class="info-product__size">
+      <p>Selecciona tu talla:</p>
+      <div>
+        {% for size in product.variants %}
+          <span>{{size.title}}</span>
+        {% endfor %}
+      </div>
+    </div>
+
+
+    {% comment %} BEGIN ADD TO CART {% endcomment %}
+    {% comment %} END ADD TO CART {% endcomment %}
+
+    {% comment %} BEGIN ATTRIBUTE {% endcomment %}
+    <div class="info-product__attribute">
+      <p class="info-product__attribute__add-list">{% render 'heart-icon' %}Agrega a tu lista de deseos</p>
+      <p class="info-product__attribute__group">
+        <span>
+          SKU: 
+        </span>
+        5055561
+      </p>
+    </div>
+    {% comment %} END ATTRIBUTE {% endcomment %}
+
   </div>
   {% comment %} INFO {% endcomment %}
 
@@ -60,7 +91,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-  const swiper = new Swiper(".mySwiper", {
+  const swiper = new Swiper(".carousel-PDP", {
     slidesPerView: 3,
     spaceBetween: 4,
     pagination: {
