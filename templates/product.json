@@ -1,8 +1,44 @@
 {
   "sections": {
     "product": {
-      "type": "product"
+      "type": "product",
+      "blocks": {
+        "3715ad54-6a81-41ad-a737-13e9e5dd17d2": {
+          "type": "product",
+          "settings": {
+            "product": "botas-para-mujer-ferni-cuero-cafe"
+          }
+        },
+        "89f4da61-d216-45f8-9dfc-2a45d7c52cf8": {
+          "type": "product",
+          "settings": {
+            "product": "bolso-para-mujer-serbia-sintetico-blanco"
+          }
+        },
+        "5c379340-8e28-45df-b1fe-9a09799c6584": {
+          "type": "product",
+          "settings": {
+            "product": "botin-para-mujer-francy-producuero-azul"
+          }
+        },
+        "73309dfe-7531-4b2d-9ce9-6802d341f957": {
+          "type": "product",
+          "settings": {
+            "product": "botines-para-mujer-francy-negro"
+          }
+        }
+      },
+      "block_order": [
+        "3715ad54-6a81-41ad-a737-13e9e5dd17d2",
+        "89f4da61-d216-45f8-9dfc-2a45d7c52cf8",
+        "5c379340-8e28-45df-b1fe-9a09799c6584",
+        "73309dfe-7531-4b2d-9ce9-6802d341f957"
+      ],
+      "settings": {
+      }
     }
   },
-  "order": ["product"]
+  "order": [
+    "product"
+  ]
 }

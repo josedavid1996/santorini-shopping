@@ -13,9 +13,9 @@
       <div class="swiper carousel-PDP">
         <div class="swiper-wrapper">
           {% for image in product.images %}
-          <a href="{{ image.src | img_url: 'large' }}" class="swiper-slide">
-            <img src="{{ image.src | img_url: 'compact' }}" alt="{{ image.alt | escape }}">
-          </a>
+            <a href="{{ image.src | img_url: 'large' }}" class="swiper-slide">
+              <img src="{{ image.src | img_url: 'compact' }}" alt="{{ image.alt | escape }}">
+            </a>
           {% endfor %}
         </div>
         <div class="swiper-pagination"></div>
@@ -25,16 +25,16 @@
   {% comment %} END GALLERY {% endcomment %}
   <div class="info-product">
     <h1 class="info-product__title">
-      {{product.title}}
+      {{ product.title }}
     </h1>
 
     <h5 class="info-product__price">
-      {{product.price | money_without_trailing_zeros}}
+      {{ product.price | money_without_trailing_zeros }}
       <span>Valor con IVA</span>
     </h5>
 
     <p class="info-product__description">
-      {{product.description}}
+      {{ product.description }}
     </p>
 
     {% comment %} SIZE {% endcomment %}
@@ -42,7 +42,7 @@
       <p>Selecciona tu talla:</p>
       <div>
         {% for size in product.variants %}
-          <span>{{size.title}}</span>
+          <span>{{ size.title }}</span>
         {% endfor %}
       </div>
     </div>
@@ -54,40 +54,53 @@
     {% comment %} BEGIN ATTRIBUTE {% endcomment %}
     <div class="info-product__attribute">
       <p class="info-product__attribute__add-list">{% render 'heart-icon' %}Agrega a tu lista de deseos</p>
-      <p class="info-product__attribute__group">
-        <span>
-          SKU: 
-        </span>
-        5055561
-      </p>
+
+      <div class="info-product__attribute__groups">
+        <p class="info-product__attribute__group">
+          <span>
+            SKU:
+          </span>
+          {{ product.selected_or_first_available_variant.sku }}
+        </p>
+        <p class="info-product__attribute__group">
+          <span>
+            Categorías:
+          </span>
+          {% for collection in product.collections %}
+            {{ collection.title | capitalize }}
+            {% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        </p>
+        <p class="info-product__attribute__group">
+          <span>
+            Etiquetas:
+          </span>
+          {% for tag in product.tags %}
+            {{ tag | capitalize }}
+            {% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        </p>
+      </div>
     </div>
-    {% comment %} END ATTRIBUTE {% endcomment %}
+  {% comment %} END ATTRIBUTE {% endcomment %}
 
   </div>
-  {% comment %} INFO {% endcomment %}
-
+{% comment %} INFO {% endcomment %}
 </div>
-{% comment %} <h1>{{ product.title }}</h1>
-<form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
-  <select name="id" id="productSelect">
-    {% for variant in product.variants %}
-    {% if variant.available %}
-    <option value="{{ variant.id }}">
-      {{ variant.title }} - {{ variant.price | money_with_currency }}
-    </option>
-    {% else %}
-    <option disabled="disabled">
-      {{ variant.title }} - sold out
-    </option>
-    {% endif %}
+{% comment %} BEGIN CARDS PRODUCTS {% endcomment %}
+<div class="related-products">
+  <h5>PRODUCTOS RELACIONADOS</h5>
+  <div class="container__card-product">
+    {% for block in section.blocks %}
+      {% if block.type == 'product' %}
+        {% render 'card-product'
+          , product: block.settings.product %}
+      {% endif %}
     {% endfor %}
-  </select>
-  {{ current_variant.price | money }}
-  <label for="Quantity">quantity</label>
-  <input type="number" id="Quantity" name="quantity" value="1" min="1">
-  <button type="submit" name="add" id="AddToCart">Add to cart</button>
-</form>
-<div>{{ product.description }}</div> {% endcomment %}
+  </div>
+</div>
+{% comment %} END CARDS PRODUCTS {% endcomment %}
+
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
@@ -100,3 +113,25 @@
     },
   });
 </script>
+
+{% schema %}
+  {
+    "name": "products",
+    "tag": "section",
+    "limit": 1,
+    "blocks": [
+      {
+        "type": "product",
+        "name": "Product List",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          }
+        ]
+      }
+    ]
+
+  }
+{% endschema %}
