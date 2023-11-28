@@ -62,7 +62,7 @@
   line-height: 22.4px;
   white-space: nowrap;
 }
-.info-product__size span {
+.info-product__size a {
   font-size: 18px;
   font-weight: 700;
   color: #1b1919;

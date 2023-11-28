@@ -42,7 +42,7 @@
       <p>Selecciona tu talla:</p>
       <div>
         {% for size in product.variants %}
-          <span>{{ size.title }}</span>
+          <a href="?{{size.id}}">{{ size.title }}</a>
         {% endfor %}
       </div>
     </div>

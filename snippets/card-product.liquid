@@ -1,68 +1,14 @@
-<style>
-  .container__card-product {
-  width: 95%;
-  max-width: 1600px;
-  margin: 20px auto 0;
-  padding: 0 16px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-.card-product__title {
-  color: var(--text-black-two);
-  font-family: var(--font-lora);
-  letter-spacing: 0.3px;
-  font-size: 15px;
-  margin-bottom: 8px;
-  margin-top: 10px;
-  line-height: 26.4px;
-  font-weight: 400;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1px;
-}
-
-.card-product__group-text {
-  display: flex;
-  gap: 4px;
-  align-items: center;
-}
-.card-product__group-text__price {
-  font-size: 16px;
-  color: #949494;
-  font-family: var(--font-karla);
-  line-height: 32px;
-  font-weight: 400;
-}
-.card-product__group-text__iva {
-  font-size: 12.8px;
-  color: #949494;
-  font-family: var(--font-karla);
-  font-weight: 400;
-}
-
-@media screen and (min-width: 640px) {
-  .container__card-product {
-    gap: 16px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container__card-product {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
-}
-</style>
+{{ 'css--cart-product.css' | asset_url | stylesheet_tag }}
 
 
 <a href="{{product.url}}" class="card-product">
   <div class="card-product__container-img">
-      <img  src="{{product | img_url: 'grande'}}" alt="{{product.title}}">
+    <img src="{{product | img_url: 'grande'}}" alt="{{product.title}}">
 
-    </div>
-  <h3 class="card-product__title">{{product.title}}</h3>
+  </div>
+  <h3 class="card-product__title">{{ product.title }}</h3>
   <div class="card-product__group-text">
-    <p class="card-product__group-text__price">{{product.price  | money  }}</p>
+    <p class="card-product__group-text__price">{{ product.price | money }}</p>
     <p class="card-product__group-text__iva">Valor con IVA</p>
   </div>
 </a>
