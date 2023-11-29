@@ -6,13 +6,29 @@
 
 <header class="header">
   {% comment %} IMG {% endcomment %}
-  <img src="{{ 'https://cdn.shopify.com/s/files/1/0829/1713/0547/files/logo-santorini.png?v=1695034309'}}" class="header__logo" />
+  <a href="/">
+    <img src="{{ 'https://cdn.shopify.com/s/files/1/0829/1713/0547/files/logo-santorini.png?v=1695034309'}}" class="header__logo" />
+
+  </a>
+
   {% comment %} NAVIGATION {% endcomment %}
   <nav class="header__navigation">
-    <ul >
+    <ul class="header__navigation-ul">
       {% for link in linklists["menu-header"].links %}
         <li>
-          <a href="{{ link.url }}">{{ link.title }}</a>
+          <a href="{{ link.url }}">{{ link.title }} {% if link.links != blank %}
+            {% render 'arrow-down-icon' %}
+          {% endif %}</a>
+          {% if link.links != blank %}
+            <ul class="header__navigation__dropdown">
+              {% for dropdown in link.links %}
+                <li>
+                  <a>{{dropdown.title}}</a>
+                </li>
+              {% endfor %}
+
+            </ul>
+          {% endif %}
         </li>
       {% endfor %}
      <li>
