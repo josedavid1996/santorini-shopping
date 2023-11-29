@@ -1,0 +1,17 @@
+.container-collection-page {
+  padding: 40px 15px;
+}
+.collection-page {
+  max-width: 970px;
+  margin: 0 auto;
+}
+.collection-page img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.container__card-product {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
