@@ -5,9 +5,15 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "fields_form": {
+      "type": "fields-form",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "fields_form"
   ]
 }
