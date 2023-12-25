@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "main": {
+      "type": "our-shops",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
