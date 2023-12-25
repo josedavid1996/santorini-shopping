@@ -16,10 +16,19 @@
             "tariff": 0,
             "vat": 19
           }
+        },
+        "02f45ba4-6455-4942-bb4b-ad0909bccea4": {
+          "type": "fields",
+          "settings": {
+            "name_type": "Aparato emisor radiodifusión o tv",
+            "tariff": 0,
+            "vat": 19
+          }
         }
       },
       "block_order": [
-        "77381834-f27a-43fe-9086-f579d699207b"
+        "77381834-f27a-43fe-9086-f579d699207b",
+        "02f45ba4-6455-4942-bb4b-ad0909bccea4"
       ],
       "settings": {
       }
