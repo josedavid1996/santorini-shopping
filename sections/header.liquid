@@ -15,27 +15,27 @@
   <nav class="header__navigation">
     <ul class="header__navigation-ul">
       {% for link in linklists["menu-header"].links %}
-        <li>
-          <a href="{{ link.url }}">{{ link.title }} {% if link.links != blank %}
+        <li class="header__navigation-li">
+          <a class="header__navigation__link" href="{{ link.url }}">{{ link.title }} {% if link.links != blank %}
             {% render 'arrow-down-icon' %}
           {% endif %}</a>
           {% if link.links != blank %}
             <ul class="header__navigation__dropdown">
-              {% for dropdown in link.links %}
-                <li>
-                  <a>{{dropdown.title}}</a>
-                </li>
+              {% for dropdown in link.links %}  
+                  <li>
+                    <a>{{dropdown.title}}</a>               
+                  </li>             
               {% endfor %}
 
             </ul>
           {% endif %}
         </li>
       {% endfor %}
-     <li>
-      <a class="text-secondary" href="/collections/lo-nuevo-1">outlet</a>
+     <li  class="header__navigation-li">
+      <a class="text-secondary header__navigation__link" href="/collections/lo-nuevo-1">outlet</a>
     </li>
-    <li>
-      <a class="text-primary" href="/collections/lo-nuevo-1">tiendas</a>
+    <li  class="header__navigation-li">
+      <a class="text-primary header__navigation__link" href="/collections/lo-nuevo-1">tiendas</a>
     </li>
     </ul>
 
