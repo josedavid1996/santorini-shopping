@@ -24,11 +24,20 @@
             "tariff": 0,
             "vat": 19
           }
+        },
+        "731b07ea-2b97-4895-ac8f-d110ab78006f": {
+          "type": "fields",
+          "settings": {
+            "name_type": "Instr musical electr teclado",
+            "tariff": 5,
+            "vat": 19
+          }
         }
       },
       "block_order": [
         "77381834-f27a-43fe-9086-f579d699207b",
-        "02f45ba4-6455-4942-bb4b-ad0909bccea4"
+        "02f45ba4-6455-4942-bb4b-ad0909bccea4",
+        "731b07ea-2b97-4895-ac8f-d110ab78006f"
       ],
       "settings": {
       }
