@@ -6,38 +6,20 @@
       "settings": {
       }
     },
-    "fields_form": {
+    "7dc4ee86-2636-4d3e-b88f-d71e86a519f1": {
       "type": "fields-form",
       "blocks": {
-        "77381834-f27a-43fe-9086-f579d699207b": {
+        "60af67a0-7537-46f6-a86f-8abcbe6405eb": {
           "type": "fields",
           "settings": {
-            "name_type": "Alicates de mano",
-            "tariff": 0,
-            "vat": 19
-          }
-        },
-        "02f45ba4-6455-4942-bb4b-ad0909bccea4": {
-          "type": "fields",
-          "settings": {
-            "name_type": "Aparato emisor radiodifusión o tv",
-            "tariff": 0,
-            "vat": 19
-          }
-        },
-        "731b07ea-2b97-4895-ac8f-d110ab78006f": {
-          "type": "fields",
-          "settings": {
-            "name_type": "Instr musical electr teclado",
-            "tariff": 5,
-            "vat": 19
+            "name_type": "dfgdfg",
+            "tariff": 545,
+            "vat": 5454
           }
         }
       },
       "block_order": [
-        "77381834-f27a-43fe-9086-f579d699207b",
-        "02f45ba4-6455-4942-bb4b-ad0909bccea4",
-        "731b07ea-2b97-4895-ac8f-d110ab78006f"
+        "60af67a0-7537-46f6-a86f-8abcbe6405eb"
       ],
       "settings": {
       }
@@ -45,6 +27,6 @@
   },
   "order": [
     "main",
-    "fields_form"
+    "7dc4ee86-2636-4d3e-b88f-d71e86a519f1"
   ]
 }
