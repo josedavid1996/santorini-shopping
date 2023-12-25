@@ -1,12 +1,13 @@
 {
   "sections": {
-    "product": {
-      "type": "product",
+    "main": {
+      "type": "our-shops",
+      "disabled": true,
       "settings": {
       }
     }
   },
   "order": [
-    "product"
+    "main"
   ]
 }

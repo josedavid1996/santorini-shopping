@@ -91,6 +91,36 @@
         ],
         "settings": {
         }
+      },
+      "bundle-suscription": {
+        "type": "bundle-suscription",
+        "blocks": {
+          "315e2b69-5bdd-4236-a5fb-361db8ff31c3": {
+            "type": "product",
+            "settings": {
+              "product": "bolso-para-mujer-serbia-sintetico-blanco"
+            }
+          },
+          "441ebd83-9b8c-40c4-86ec-85a59bf5d1d1": {
+            "type": "product",
+            "settings": {
+              "product": "botas-para-mujer-ferni-cuero-cafe"
+            }
+          },
+          "493387aa-ec96-4067-9142-cbc6d7a97931": {
+            "type": "product",
+            "settings": {
+              "product": "botas-para-mujer-ferni-cuero-cafe"
+            }
+          }
+        },
+        "block_order": [
+          "315e2b69-5bdd-4236-a5fb-361db8ff31c3",
+          "441ebd83-9b8c-40c4-86ec-85a59bf5d1d1",
+          "493387aa-ec96-4067-9142-cbc6d7a97931"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
