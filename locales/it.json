@@ -1,0 +1,32 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin language editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "customer_accounts": {
+    "order_details": {
+      "payment": {
+        "transactions": {
+          "show_emv_details": "Mostra i dettagli EMV",
+          "hide_emv_details": "Nascondi i dettagli EMV"
+        },
+        "emv_details": {
+          "auth": "AUTORIZZAZIONE",
+          "aid": "AIUTO",
+          "source": "FONTE"
+        }
+      }
+    }
+  },
+  "general": {
+    "404": {
+      "title": "Non trovato",
+      "subtext_html": "La pagina che stavi cercando non esiste"
+    }
+  }
+}
