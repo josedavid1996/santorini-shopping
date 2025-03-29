@@ -15,59 +15,14 @@
     },
     "17429486025c6ba093": {
       "type": "apps",
-      "blocks": {
-        "yotpo_loyalty_rewards_product_points_module_app_block_HiMdx7": {
-          "type": "shopify://apps/yotpo-loyalty-rewards/blocks/product-points-module-app-block/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "yotpo_loyalty_rewards_product_points_module_app_block_HiMdx7"
-      ],
       "settings": {}
     },
     "1742952576f16116b3": {
       "type": "apps",
-      "blocks": {
-        "stamped_reviews_instagram_feed_XtCgDy": {
-          "type": "shopify://apps/stamped-reviews/blocks/instagram-feed/a103faaf-2125-4b0e-89fa-de5149736723",
-          "settings": {
-            "feed_type": "carousel",
-            "color_hover": "",
-            "hover_text": "",
-            "shop_button_text": "",
-            "auto_play": false,
-            "review_ids": "",
-            "product_ids": "",
-            "category": "",
-            "product_brand": "",
-            "tags": "",
-            "min_rating": "none",
-            "fill_empty": false,
-            "random": false,
-            "with_photos": false
-          }
-        }
-      },
-      "block_order": [
-        "stamped_reviews_instagram_feed_XtCgDy"
-      ],
       "settings": {}
     },
     "1742952588819f888d": {
       "type": "apps",
-      "blocks": {
-        "okendo_reviews_widget_8fCQEp": {
-          "type": "shopify://apps/okendo/blocks/reviews-widget/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "product": "{{product}}",
-            "widget_type": "reviews_widget"
-          }
-        }
-      },
-      "block_order": [
-        "okendo_reviews_widget_8fCQEp"
-      ],
       "settings": {}
     }
   },
